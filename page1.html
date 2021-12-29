@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+Massively by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Source Panel Method</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	
+	<body class="is-preload">
+			
+		<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+	<!-- Nav -->
+	<nav id="nav">
+		<h4><a href="index.html"> Home Page </a></h4>
+		<h4><a href="page1.html"> Source Panel Method </a></h4>
+		<h4><a href="page2.html"> Resonant Orbit Calculator </a></h4>
+		<h4><a href="page3.html"> Rear Wing Research </a></h4>
+		<h4><a href="page4.html"> Overture Engine Option </a></h4>
+		<h4><a href="page5.html"> UCI Rocket Project: Solids Team </a></h4>
+	</nav>
+
+	<!-- Intro -->
+		<div id="intro">
+			<h1>Source Panel Method</h1>
+		</div>
+
+	<div id="main">
+	 <!-- Posts -->
+
+	 <style>
+		* {
+		  box-sizing: border-box;
+		}
+		
+		.column {
+		  float: left;
+		  width: 50%;
+		  padding: 5px;
+		}
+		
+		/* Clearfix (clear floats) */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		</style>
+		
+		  <section>
+			   <article>
+				  <h2>Project Method and Introduction</h2>
+
+				  <p>Being able to analyze and understand the pressure distribution over a body is the bread and butter of aerodynamics. Often, especially for simple geometries, this can be done through the superposition of potential flows. However, for more complex geometries superimposing potential flows may no longer become a viable method for determining the pressure distribution. As such other methods can be utilised to obtain the pressure distribution. This project will examine one such method, the source panel method.</p>
+				  <p>The source panel method makes use of one of the fundamental potential flows, the line source. By taking an infinite amount of infinitely small line sources each with their own strengths a source sheet can be made into any arbitrary shape. By finding how these source strengths vary along the source sheet the pressure distribution over the source sheet, and thus the body can be determined. However, by dividing the shape that is being analyzed into very small sections a large amount of computing power is required to determine the source strengths.</p>
+				  <p>As such for this project the shape that is being analyzed, a custom ellipse, will be discretized into larger panels with constant source strengths. After this is done, the source strengths can be determined. This is done by starting at one of the panels, commonly known as the ith panel, and summing up the effects of all the other source panels, called jth panels. After all the jth panel’s effects on the ith panel have been added together the ith panel changes to become the next source panel that makes up the shape. The process is then repeated for all of the source panels. The results being a number of equations equal to the number of panels and a number of unknown sources equal to the number of panels. As such linear algebra may be used to solve for the unknown source panel strengths. Once the source strengths have been found they can be used to calculate the pressure distribution over the body.</p>
+				</article>
+		   </section>
+		   <section>
+			   <article>
+				  <h2>Equations Utilised to Create Matlab Code</h2>
+
+				  <img src="images2/0003.jpg" width="100%" height="100%">
+				  <img src="images2/0004.jpg" width="100%" height="100%">
+				</article>
+		   </section>
+		   <section>
+			   <article>
+
+				  <h2>Results Computed by Matlab Code</h2>
+
+				  <div class="row">
+					<div class="column">
+					  <img src="images2/pic07.jpg" style="width:100%" height="85%">
+					</div>
+					<div class="column">
+						<img src="images2/pic08.jpg" style="width:100%" height="85%">
+					</div>
+				  </div>
+				  <div class="row">
+					<div class="column">
+					  <img src="images2/pic09.jpg" style="width:100%" height="85%">
+					</div>
+					<div class="column">
+					  <img src="images2/pic10.jpg" style="width:100%" height="85%">
+					</div>
+				  </div>
+
+			   </article>
+		  </section>
+	   </div>
+	</div>
+
+	<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section>
+					<h3>Email</h3>
+					<p><a href="mailto:nslayton@uci.edu" target="_blank">nslayton@uci.edu</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/nicholas-d-slayton/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+			
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			
+	</body>
+</html>			
